@@ -1,0 +1,34 @@
+/*노멀라이징*/
+*{
+    padding:0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+/*라이브러리*/
+.cell{
+    float:left;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-bar{
+    width: 500px;
+    height: 60px;
+    background-color:#ddd;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    /* justify-content: space-around; */
+    align-items: center;
+}
